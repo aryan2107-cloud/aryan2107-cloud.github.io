@@ -227,23 +227,40 @@
         }
 
         /* Skills */
-        .skills-list {
-            font-family: 'Segoe UI', sans-serif;
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
 
-        .skill-category {
-            margin-bottom: 15px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .skill-category strong {
-            color: #1a1a1a;
-            display: inline-block;
-            width: 200px;
+        td {
+            padding: 12px 15px;
+            vertical-align: top;
         }
-
-        .skill-items {
-            display: inline;
-            color: #555;
+        
+        td:first-child {
+            font-weight: bold;
+            width: 25%;
+        }
+        
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
         }
 
         /* Certifications */
@@ -487,44 +504,40 @@
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="skills-list">
-        <h2>Technical Skills</h2>
-        
-        <div class="skill-category">
-            <strong>Programming & Tools:</strong>
-            <span class="skill-items">Python, Git, Power BI, MS Office</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>ML/AI Frameworks:</strong>
-            <span class="skill-items">TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>Data Analysis:</strong>
-            <span class="skill-items">Pandas, NumPy, Matplotlib, Plotly, Seaborn</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>ML Operations:</strong>
-            <span class="skill-items">MLflow, TensorBoard, Flask, FastAPI, TensorFlow Extended (TFX)</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>ML Techniques:</strong>
-            <span class="skill-items">Regression, Classification, Clustering (K-Means, DBSCAN, Hierarchical), Feature Engineering, Model Evaluation</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>Advanced AI:</strong>
-            <span class="skill-items">Deep Learning, Neural Networks, Computer Vision, Natural Language Processing, Reinforcement Learning</span>
-        </div>
-
-        <div class="skill-category">
-            <strong>Statistics:</strong>
-            <span class="skill-items">Probability Theory, Hypothesis Testing, Statistical Inference, Time Series Analysis</span>
-        </div>
+    <!-- Skills -->     
+    <div class="container">
+        <h2>TECHNICAL SKILLS</h2>
+        <table>
+            <tr>
+                <td>Programming & Tools:</td>
+                <td>Python, Git, Power BI, MS Office</td>
+            </tr>
+            <tr>
+                <td>Frameworks & Libraries:</td>
+                <td>TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost, Pandas, NumPy, Matplotlib, Plotly, MLflow, Seaborn, TensorBoard, Flask / FastAPI</td>
+            </tr>
+            <tr>
+                <td>Machine Learning Techniques:</td>
+                <td>Regression Analysis, Predictive Modeling, Classification (Binary, Multiclass), Feature Engineering, Clustering (K-Means, DBSCAN, Hierarchical), Model Evaluation</td>
+            </tr>
+            <tr>
+                <td>Advanced AI Methods:</td>
+                <td>Deep Learning, Neural Networks, Unsupervised Learning, Reinforcement Learning, Computer Vision, Natural Language Processing</td>
+            </tr>
+            <tr>
+                <td>Statistics & Data Science:</td>
+                <td>Probability Theory, Hypothesis Testing, Statistical Inference, Descriptive & Inferential Statistics, Time Series Analysis</td>
+            </tr>
+            <tr>
+                <td>Data Handling:</td>
+                <td>Data Preprocessing, Data Visualization, Data Structures, Algorithms</td>
+            </tr>
+            <tr>
+                <td>Certifications:</td>
+                <td>Google Cloud Career Launchpad Data Analyst, Neural Networks and Deep Learning, Machine Learning with Python (Udemy), Deep Learning with TensorFlow</td>
+            </tr>
+        </table>
+    </div>
     </section>
 
     <!-- Certifications -->
