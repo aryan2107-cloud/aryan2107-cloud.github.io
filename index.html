@@ -1,1 +1,576 @@
-<h1>My Protfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Patel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c2c2c;
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid #2c2c2c;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 3px solid #e0e0e0;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .contact-links {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a {
+            color: #2c2c2c;
+            text-decoration: none;
+            margin-right: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+        }
+
+        .contact-links a:hover {
+            border-bottom-color: #2c2c2c;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        /* Research Interests */
+        .interests {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .interests ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .interests li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .interests li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 30px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .publication:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2c2c2c;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        .publication-venue {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .publication-links a {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #ccc;
+            margin-right: 15px;
+        }
+
+        .publication-links a:hover {
+            border-bottom-color: #2c2c2c;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .project-description {
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            color: #888;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Education & Experience */
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-left: 25px;
+            border-left: 2px solid #e0e0e0;
+        }
+
+        .timeline-header {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .timeline-subheader {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        .timeline-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .timeline-description {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .timeline-description ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .timeline-description li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        /* Skills */
+        .skills-list {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-category strong {
+            color: #1a1a1a;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .skill-items {
+            display: inline;
+            color: #555;
+        }
+
+        /* Certifications */
+        .cert-list {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .cert-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cert-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            color: #555;
+        }
+
+        .cert-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c2c2c;
+        }
+
+        /* Articles */
+        .article {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .article-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            font-size: 1.05rem;
+        }
+
+        .article-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .article-description {
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .article-link {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .article-link:hover {
+            border-bottom-color: #2c2c2c;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-links a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .skill-category strong {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="linkedin.jpg" alt="Aryan Patel" class="profile-photo">
+        <div class="header-content">
+            <h1>Aryan Patel</h1>
+            <p class="title">Graduate Student in Artificial Intelligence | Northeastern University</p>
+            <div class="contact-links">
+                <a href="mailto:patelaryana@northeastern.edu">patelaryana@northeastern.edu</a>
+                <a href="https://linkedin.com/in/aryan-patel2107" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="resume.pdf" target="_blank">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a Master's student in Artificial Intelligence at Northeastern University in Boston, with a concentration in Machine Learning. My research interests lie at the intersection of deep learning, computer vision, and natural language processing, with a particular focus on developing scalable solutions for real-world applications.</p>
+        <p>I completed my Bachelor's in Computer Science & Engineering with a specialization in AI/ML from Quantum University, where I developed a strong foundation in machine learning theory and practical implementation. My work spans classification models, neural network architectures, and production-ready ML pipelines, with experience in both academic research and industry applications.</p>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="interests" class="interests">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Deep Learning and Neural Network Architectures</li>
+            <li>Computer Vision and Medical Image Analysis</li>
+            <li>Natural Language Processing and Text Classification</li>
+            <li>Machine Learning Pipeline Development and MLOps</li>
+            <li>Predictive Modeling and Feature Engineering</li>
+            <li>Reinforcement Learning and Unsupervised Methods</li>
+        </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <h2>Research Publications</h2>
+        
+        <div class="publication">
+            <div class="publication-title">Title of Your Research Paper</div>
+            <div class="publication-authors">Aryan Patel, Co-author Names</div>
+            <div class="publication-venue">Conference/Journal Name, Year</div>
+            <div class="publication-links">
+                <a href="#">PDF</a>
+                <a href="#">Code</a>
+                <a href="#">arXiv</a>
+            </div>
+        </div>
+
+        <!-- Add more publications as needed -->
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Research & Projects</h2>
+        
+        <div class="project">
+            <div class="project-title">Lung Damage Detection System</div>
+            <div class="project-description">Designed and trained a convolutional neural network for multi-class classification of lung diseases, including pneumonia and lung cancer. Integrated the model with a real-time ML pipeline using TensorFlow Extended (TFX), ensuring smooth data ingestion, automated preprocessing, and scalable training capabilities in production-like environments. The system serves as a diagnostic support tool with potential to reduce manual diagnosis time by 30% and improve early detection accuracy in clinical settings.</div>
+            <div class="project-tech">Technologies: TensorFlow, TensorFlow Extended (TFX), CNN, Seaborn</div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Multiclass Classification Using Neural Networks</div>
+            <div class="project-description">Developed and optimized a neural network on 50,000+ multi-class images, achieving 92% test accuracy through extensive hyperparameter tuning and architecture experimentation. Validated performance with confusion matrices and learning curves, demonstrating a 15% improvement over baseline models while ensuring robustness and interpretability. Compiled comprehensive results including visualizations, error analyses, and comparisons against alternative approaches.</div>
+            <div class="project-tech">Technologies: TensorFlow, Scikit-learn, Matplotlib, Google Colab</div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Customer Feedback Classification System</div>
+            <div class="project-description">Developed and deployed a Naive Bayes classifier to categorize 10,000+ customer feedback samples, achieving 91% accuracy through systematic preprocessing including tokenization, stopword removal, and vectorization. Enhanced model performance by 18% through advanced feature engineering and iterative hyperparameter tuning. Conducted thorough evaluation using precision (89%), recall (87%), and F1-score (88%) metrics.</div>
+            <div class="project-tech">Technologies: Python, Scikit-learn, NLP, Feature Engineering</div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">California Housing Price Prediction</div>
+            <div class="project-description">Built and validated regression models to predict California housing prices with strong predictive accuracy. Conducted in-depth exploratory data analysis, uncovering correlations between housing prices and 10+ demographic and economic indicators including income levels, population density, and proximity to the ocean. Compared multiple regression approaches (linear, ridge, lasso) to select the best-performing model for deployment.</div>
+            <div class="project-tech">Technologies: Python, Pandas, Scikit-learn, Regression Analysis</div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        
+        <div class="timeline-item">
+            <div class="timeline-header">Master of Science in Artificial Intelligence</div>
+            <div class="timeline-subheader">Northeastern University, Boston, MA</div>
+            <div class="timeline-date">Present</div>
+            <div class="timeline-description">Concentration: Machine Learning</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">Bachelor of Technology in Computer Science & Engineering</div>
+            <div class="timeline-subheader">Quantum University, Dehradun, India</div>
+            <div class="timeline-date">August 2021 – June 2025</div>
+            <div class="timeline-description">Specialization in Artificial Intelligence and Machine Learning</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="timeline-item">
+            <div class="timeline-header">AI and Machine Learning Intern</div>
+            <div class="timeline-subheader">YBI Foundation</div>
+            <div class="timeline-date">November 2023 – October 2024</div>
+            <div class="timeline-description">
+                <ul>
+                    <li>Developed and deployed a Naive Bayes classifier to categorize 10,000+ customer feedback samples, extracting actionable insights from unstructured data</li>
+                    <li>Enhanced accuracy by 18% through systematic preprocessing (tokenization, stopword removal, vectorization), advanced feature engineering, and iterative hyperparameter tuning</li>
+                    <li>Conducted thorough evaluation using metrics such as accuracy (91%), precision (89%), recall (87%), and F1-score (88%), along with confusion matrix analysis</li>
+                    <li>Documented methodology, experimental design, and results in structured reports for knowledge transfer and future ML projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">Machine Learning Intern</div>
+            <div class="timeline-subheader">PRODIGY INFOTECH</div>
+            <div class="timeline-date">July 2023 – August 2023</div>
+            <div class="timeline-description">
+                <ul>
+                    <li>Built and validated regression models to predict California housing prices with strong predictive accuracy</li>
+                    <li>Conducted in-depth exploratory data analysis, uncovering correlations between housing prices and 10+ demographic and economic indicators</li>
+                    <li>Streamlined preprocessing pipeline by implementing procedures for missing value imputation, categorical encoding, and feature scaling, reducing preparation time by 25%</li>
+                    <li>Collaborated with 3-member intern team to compare regression approaches (linear, ridge, lasso), selecting the best-performing model for deployment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-list">
+        <h2>Technical Skills</h2>
+        
+        <div class="skill-category">
+            <strong>Programming & Tools:</strong>
+            <span class="skill-items">Python, Git, Power BI, MS Office</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>ML/AI Frameworks:</strong>
+            <span class="skill-items">TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>Data Analysis:</strong>
+            <span class="skill-items">Pandas, NumPy, Matplotlib, Plotly, Seaborn</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>ML Operations:</strong>
+            <span class="skill-items">MLflow, TensorBoard, Flask, FastAPI, TensorFlow Extended (TFX)</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>ML Techniques:</strong>
+            <span class="skill-items">Regression, Classification, Clustering (K-Means, DBSCAN, Hierarchical), Feature Engineering, Model Evaluation</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>Advanced AI:</strong>
+            <span class="skill-items">Deep Learning, Neural Networks, Computer Vision, Natural Language Processing, Reinforcement Learning</span>
+        </div>
+
+        <div class="skill-category">
+            <strong>Statistics:</strong>
+            <span class="skill-items">Probability Theory, Hypothesis Testing, Statistical Inference, Time Series Analysis</span>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="cert-list">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Google Cloud Career Launchpad Data Analyst</li>
+            <li>Neural Networks and Deep Learning</li>
+            <li>Machine Learning with Python (Udemy)</li>
+            <li>Deep Learning with TensorFlow</li>
+        </ul>
+    </section>
+
+    <!-- Writing & Articles -->
+    <section id="articles">
+        <h2>Writing & Articles</h2>
+        <p style="color: #666; margin-bottom: 30px;">I regularly write about AI developments, industry trends, and technical insights on LinkedIn.</p>
+        
+        <div class="article">
+            <div class="article-title">Article Title: Latest Developments in Large Language Models</div>
+            <div class="article-date">October 2025</div>
+            <div class="article-description">Analysis of recent breakthroughs in LLM architectures and their implications for the AI industry, discussing efficiency improvements and emerging applications.</div>
+            <a href="#" class="article-link">Read on LinkedIn →</a>
+        </div>
+
+        <div class="article">
+            <div class="article-title">Understanding Neural Network Optimization Techniques</div>
+            <div class="article-date">October 2025</div>
+            <div class="article-description">A deep dive into modern optimization algorithms used in training deep neural networks, comparing Adam, RMSprop, and newer adaptive methods.</div>
+            <a href="#" class="article-link">Read on LinkedIn →</a>
+        </div>
+
+        <div class="article">
+            <div class="article-title">The Future of Computer Vision in Healthcare</div>
+            <div class="article-date">September 2025</div>
+            <div class="article-description">Exploring how computer vision is transforming medical diagnostics, with case studies on lung disease detection and cancer screening applications.</div>
+            <a href="#" class="article-link">Read on LinkedIn →</a>
+        </div>
+
+        <!-- Add more articles as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Last updated: October 2025</p>
+    </footer>
+</body>
+</html>
