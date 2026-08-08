@@ -13,7 +13,7 @@ description              : "A website hosting Aryan Patel's projects."
 url                      : "https://aryanp2107.github.io"
 baseurl                  : ""
 repository               : "aryanp2107/aryanp2107.github.io"
-teaser                   : /assets/images/teaser-default.png
+teaser                   : /assets/images/avatar.png
 words_per_minute         : 200
 breadcrumbs              : false
 search                   : true
