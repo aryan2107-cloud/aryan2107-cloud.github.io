@@ -22,7 +22,7 @@ search_full_content      : true
 # Site Author
 author:
   name             : "Aryan Patel"
-  avatar           : "/assets/images/avatar.jpg"
+  avatar           : "/assets/images/avatar.png"
   bio              : "Hi, I'm Aryan, a graduate student at Northeastern University."
   location         : "Boston, MA"
   links:
