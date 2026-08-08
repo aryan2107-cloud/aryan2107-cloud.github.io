@@ -1,0 +1,6 @@
+# main navigation links — matches friend's minimal 2-item structure
+main:
+  - title: "Writing"
+    url: /writing/
+  - title: "About Me"
+    url: /about/

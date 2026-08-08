@@ -1,0 +1,151 @@
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+# Skin left at default (light) to match reference. Other options:
+# "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
+# minimal_mistakes_skin: "default"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Aryan Patel's Projects"
+title_separator          : "|"
+name                     : "Aryan Patel"
+description              : "A website hosting Aryan Patel's projects."
+url                      : "https://aryanp2107.github.io"
+baseurl                  : ""
+repository               : "aryanp2107/aryanp2107.github.io"
+teaser                   : /assets/images/teaser-default.png
+words_per_minute         : 200
+breadcrumbs              : false
+search                   : true
+search_full_content      : true
+
+# Site Author
+author:
+  name             : "Aryan Patel"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "Hi, I'm Aryan, a graduate student at Northeastern University."
+  location         : "Boston, MA"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:patel.aryana@northeastern.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/aryanp2107"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/aryan-patel2107"
+
+# Site Footer
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/aryan-patel2107"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/aryanp2107"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 10
+paginate_path: /page:num/
+timezone: America/New_York
+
+# Plugins (whitelisted for GitHub Pages)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
