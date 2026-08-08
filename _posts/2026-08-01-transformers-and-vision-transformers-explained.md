@@ -1,6 +1,6 @@
 ---
 title: "Transformers and Vision Transformers"
-date: YYYY-MM-DD
+date: 2026-08-01
 categories:
   - teaching
 tags:

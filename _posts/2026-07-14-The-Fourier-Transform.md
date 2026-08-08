@@ -1,6 +1,6 @@
 ---
 title: "The Fourier Transform"
-date: YYYY-MM-DD
+date: 2026-07-14
 categories:
   - teaching
 excerpt: "An overview of the Fourier Transform"
