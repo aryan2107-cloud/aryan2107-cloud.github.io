@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Perception Ensemble: RT-DETR + U-Net + MiDaS on BDD100K"
-date: YYYY-MM-DD
+date: 2026-04-03
 categories:
   - projects
 tags:
