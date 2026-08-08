@@ -10,7 +10,7 @@ tags:
   - curriculum
 header:
   teaser: /assets/images/100-days-of-ml-structured-self-study-teaser.png
-excerpt: "A 100-day self-designed ML curriculum in three phases — data foundations, classical ML, deep learning — with capstones between phases. Currently at 46/100."
+excerpt: "A 100-day self-designed ML curriculum in three phases — data foundations, classical ML, deep learning — with capstones between phases. Currently at 67/100"
 ---
 
 ## Overview

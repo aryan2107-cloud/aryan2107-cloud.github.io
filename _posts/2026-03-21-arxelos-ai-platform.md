@@ -10,7 +10,7 @@ tags:
   - onnx
   - azure
 header:
-  teaser: /assets/images/arxelos-ai-platform-teaser.jpg
+  teaser: /assets/images/arxelos-ai-platform-teaser.png
 excerpt: "A solo-built, production-deployed platform hosting my AI/ML work under one roof — brain tumor classification with CNN vs ViT interpretability, an autonomous perception ensemble on BDD100K, and a PubMed-grounded literature RAG pipeline."
 ---
 
