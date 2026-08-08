@@ -23,12 +23,19 @@
   }
 }
 
-// Wider content container (default MM is 1280px)
-#main,
+.initial-content,
 .masthead__inner-wrap {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#main {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 // 3 posts per row (default MM grid is 4 per row)
