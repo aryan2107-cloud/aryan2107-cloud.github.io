@@ -1,5 +1,5 @@
 ---
-title: "Multi-class brain tumor classifier
+title: "Multi-class brain tumor classifier"
 date: 2026-05-06
 categories:
   - projects
