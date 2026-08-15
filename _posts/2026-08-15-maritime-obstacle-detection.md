@@ -1,6 +1,6 @@
 ---
 title: "Class-Agnostic Maritime Obstacle Detection with Simulated IMU-Guided Horizon Stabilization for Autonomous Surface Vessels"
-date: 2026-07-15
+date: 2026-08-15
 categories:
   - projects
 tags:
