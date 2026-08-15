@@ -19,8 +19,6 @@ youtube: "https://www.youtube.com/embed/70D5531bZ5Y?autoplay=1&mute=1&controls=0
 
 Course project for CS5330 (Pattern Recognition and Computer Vision, Prof. Bruce Maxwell) with Ananda Sangli and Julee Chung. We built a class-agnostic obstacle detection pipeline for autonomous surface vessels — one that treats every floating obstacle as "hit-or-not-hit" rather than trying to classify it, because on the water what you need to avoid isn't neatly categorizable.
 
-## Demo
-
 <iframe width="560" height="315"
         src="https://www.youtube.com/embed/70D5531bZ5Y?autoplay=1&mute=1&controls=0&loop=1&playlist=70D5531bZ5Y"
         title="YouTube video player"
