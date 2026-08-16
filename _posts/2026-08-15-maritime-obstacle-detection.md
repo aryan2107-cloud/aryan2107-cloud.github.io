@@ -70,7 +70,7 @@ Full result videos across all test scenarios — including RQ1 horizon stabiliza
 
 ## Resources
 
-- **Report (IEEE format):** [PDF](assets\CS5330_Final_Report.pdf)
+- **Report (IEEE format):** [PDF](assets/CS5330_Final_Report.pdf)
 - **Code:** [github.com/aryanp2107/maritime_obstacle_detection](https://github.com/aryanp2107/maritime_obstacle_detection)
-- **Team:** Aryan Patel, Ananda Sangli, Julee (Woo Jin) Chung
+- **Team:** Aryan Patel, Ananda Sangli, Julee Chung
 - **Course:** CS5330 (Pattern Recognition and Computer Vision), Prof. Bruce Maxwell, Northeastern University
